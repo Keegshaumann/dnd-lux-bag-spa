@@ -568,32 +568,51 @@ h2.light { color: var(--white); }
 }
 
 /* ─────────────────────────── BRANDS ─────────────────────────── */
-#brands { padding: 120px 0; }
+#brands { padding: 120px 0 0; }
 #brands h2 {
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 64px;
   margin-top: 8px;
 }
-.brands-grid {
+
+.brands-marquee {
+  overflow: hidden;
+  padding: 32px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.marquee-track {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
+  align-items: center;
+  width: max-content;
+  animation: marquee-scroll 45s linear infinite;
 }
-.brand-pill {
-  display: inline-block;
-  padding: 10px 22px;
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 100px;
-  color: rgba(255,255,255,0.75);
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  cursor: default;
-  transition: border-color 0.2s, color 0.2s, background 0.2s;
+.marquee-track:hover {
+  animation-play-state: paused;
 }
-.brand-pill:hover {
-  border-color: var(--gold);
+.brand-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: rgba(255,255,255,0.8);
+  white-space: nowrap;
+  padding: 0 36px;
+  transition: color 0.25s;
+}
+.brand-mark:hover {
   color: var(--gold);
+}
+.marquee-sep {
+  color: var(--gold);
+  font-size: 0.6rem;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* ─────────────────────────── TRUST ─────────────────────────── */
