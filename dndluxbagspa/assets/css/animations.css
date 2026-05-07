@@ -1,0 +1,15 @@
+/* ─────────────────────────────────────────
+   D&D Luxury Bag Spa — Pre-animation states
+   Elements start invisible; GSAP reveals them on scroll.
+   ───────────────────────────────────────── */
+
+.anim-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Hero content items stagger on load */
+.hero-content .anim-fade-up:nth-child(1) { animation-delay: 0.1s; }
+.hero-content .anim-fade-up:nth-child(2) { animation-delay: 0.25s; }
+.hero-content .anim-fade-up:nth-child(3) { animation-delay: 0.4s; }
+.hero-content .anim-fade-up:nth-child(4) { animation-delay: 0.55s; }

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <!-- Outer ring -->
+  <circle cx="110" cy="110" r="106" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="110" cy="110" r="98"  fill="none" stroke="currentColor" stroke-width="0.5"/>
+
+  <!-- Bag icon -->
+  <g transform="translate(110,100)">
+    <!-- Bag body -->
+    <rect x="-24" y="-16" width="48" height="36" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+    <!-- Bag handle left -->
+    <path d="M-14,-16 Q-14,-28 -7,-28 Q0,-28 0,-16" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <!-- Bag handle right -->
+    <path d="M0,-16 Q0,-28 7,-28 Q14,-28 14,-16" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <!-- Clasp -->
+    <circle cx="0" cy="-4" r="3.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <line x1="0" y1="-7.5" x2="0" y2="-10" stroke="currentColor" stroke-width="1.2"/>
+  </g>
+
+  <!-- D&D text -->
+  <text x="110" y="158" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="400" letter-spacing="4" fill="currentColor">D&amp;D</text>
+
+  <!-- LUXURY BAG SPA curved along bottom arc -->
+  <path id="arc" d="M 30,170 A 85,85 0 0,0 190,170" fill="none"/>
+  <text font-family="Helvetica,Arial,sans-serif" font-size="9" font-weight="400" letter-spacing="3.5" fill="currentColor">
+    <textPath href="#arc" startOffset="50%" text-anchor="middle">LUXURY BAG SPA</textPath>
+  </text>
+</svg>
